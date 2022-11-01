@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/368f6e9979.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="project">
+
+        <div class="project__confirmed .confirmed-visible">
+            <p>Your card details have been saved!</p>
+            <i class="fa-solid fa-check"></i>
+           
+        </div>
+
+        <div class="project__top">
+            <div class="project__top__card-rev">
+                <p class="cvc">000</p>
+            </div>
+            <div class="project__top__card-front">
+                <img src="dist/img/card-logo.svg" alt="logo banku na zdjęciu karty">
+                <p class="card-number">0000 0000 0000 0000</p>
+                <p class="card-user">Jan Kowalski</p>
+                <div class="card-date">
+                    <span class="card-date__month">00</span>
+                    <span>/</span>
+                    <span class="card-date__year">00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project__bottom">
+            <span class="error">Please complete all fields!</span>
+            <div class="inputs">
+                <label for="cardholder">cardholder name</label>
+                <input type="text" id="cardholder" class="cardholder" placeholder="e.g. Jan Kowalski">
+
+                <label for="card-number">card number</label>
+                <input type="text" id="cardnumber" class="user-card-number" placeholder="e.g. 1234 5678 9100 0000"
+                    maxlength="16">
+
+            </div>
+
+
+            <div class="flex-inputs">
+                <div class="check">
+                    <span>
+                        <label for="expDateMM">EXP. DATE (MM / YY)</label>
+                    </span>
+                    <input type="text" maxlength="2" placeholder="MM" class="expdateMM">
+                    <input type="text" maxlength="2" placeholder="YY" class="expdateYY">
+                </div>
+
+                <div class="cvv-box">
+                    <span>
+                        <label for="">CVC</label>
+                    </span>
+                    <input type="text " class="cvc-input" placeholder="CVC" maxlength="3">
+                </div>
+            </div>
+            <button class="confirm-button">Confirm</button>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
