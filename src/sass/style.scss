@@ -56,14 +56,14 @@ body {
 
 	&__top {
 		height: 35%;
-		background-image: url('dist/img/bg-main-mobile.png');
+		background-image: url('/dist/img/bg-main-mobile.png');
 		background-position: center;
 		background-size: cover;
 		padding: 0 5%;
 		position: relative;
 
 		&__card-front {
-			background-image: url('dist/img/bg-card-front.png');
+			background-image: url('/dist/img/bg-card-front.png');
 
 			position: relative;
 			width: 270px;
@@ -106,7 +106,7 @@ body {
 		}
 
 		&__card-rev {
-			background-image: url('dist/img/bg-card-back.png');
+			background-image: url('/dist/img/bg-card-back.png');
 			display: inline-block;
 			position: relative;
 			background-size: cover;

@@ -74,9 +74,8 @@ const checkErrors = () => {
 	let errorCount = 0
 
 	allInputs.forEach(el => {
-		if (el.classList.contains('error-input')) {
+		if (el.classList.contains('error-input') || el.value === '') {
 			errorCount++
-			console.log(errorCount)
 		}
 	})
 
